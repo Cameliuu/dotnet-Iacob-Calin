@@ -26,7 +26,7 @@ namespace Iacob_Calin
             Console.WriteLine("Introduceti nota primita la cea de a doua proba: ");
             b = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Introduceti nota primita la cea de a treia proba: ");
-            b = Convert.ToDouble(Console.ReadLine());
+            c = Convert.ToDouble(Console.ReadLine());
 
         }
     }
