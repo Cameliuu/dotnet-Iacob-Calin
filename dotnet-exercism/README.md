@@ -1,0 +1,1 @@
+Acest folder contine codul problemelor pe care le-am rezolvat in cadrul platformei exercism.io
