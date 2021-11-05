@@ -1,18 +1,29 @@
-Acesta este un program ce va calcula diferenta de varsta dintre doua persoane
-Programul utilizeaza atat metode ale clasei Math cat si ale clasei String.
+Acest program a avut ca scop exersarea notiunilor de:
+						     colectii(predate in cadrul workshop-ului de ieri (4.11.2021)),
+						     clase
+						     metode
 
-Am creat o noua clasa si am numit-o "Person".Inauntrul acestei clasei se gasesc 4 campuri si anume si 4 proprietati corespunzand acetora:
-	-3 string-uri:firstname,lastname,fullname
-	-un intreg:age
-Proprietatea FullName este folosita pentru a returna concatenarea proprietatilor FirstName si LastName
-
-In functia main am instantiat doua obiecte pentru clasa Person, si anume person1 si person2.
-
-Pentru realizarea programului am folosit 3 metode:
-	-getName:Returneaza un string ce se presupune a fi numele utilizatorului
-	-getAge:Returneaza varsta utilizatorului
-	-isOlder:Verifica daca primul argument este mai mare decat al doilea, folosind metoda Max a Clasei Math
-
-In interiorul lui main am impartit string-ul returnat de metoda getName, folosind metoda Split a clasei String, iar apoi am atribuit numelui de familie si preunmelui fiecarei persoane valoarea gasita la primul indice al vectorului de string-uri, respectiv la al doilea.
-Am atribuit varstei fiecarei persoane valoarea returnata de getAge
-Apoi am care persoana este mai mare, calculand diferenta folosind metoda Abs a clasei Math si facand afisarea.
+La rularea programului suntem intampinati cu un meniu ce ne permite urmatoarele urmatoarele functonalitati:
+	
+	Inregistrarea unui email
+			Este posibila mereu atata timp cat programul ruleaza
+			Pentru a verifica daca adresa de email este corecta, programul se foloseste de notiunea de expresii regulate pentru a verifica existenta unui anumit pattern in 																					adresa introdusa.
+			Din pacate, nu am reusit sa inteleg aceasta notiune atat de bine, astfel programul nu recunoasta pattern-urile de genul nume.prenume@adresa.com ca fiind valide
+			De altfel programul verifica si daca adresa introdusa este deja asociata unui cont.
+	
+	Logare
+			Utilizatorul se poate loga daca cunoaste credentialele unui cont (numele si email-ul).
+			Verificarea pentru valabilitatea email-ului introdus este realizata folosind metoda Trim() a clasei String.
+			Daca utilizatorul este logat, la aparitia meniului acesta este intampinat de numele si emai-ul asociat contului.
+			Daca utilizatorul nu este logat, acesta este informat la aparitia meniului privind acest fapt.
+	
+	Delogare
+			Utilizatorul are posibilitatea de a se deloga, in cazul in care acesta este logat
+			Daca acesta nu este logat, va fi informat de acest fapt, fiindu-i restrictionat accesul acestei facilitati
+			
+	Stergere
+			In cazul in care utilizatorul este logat, acesta are posibilitatea de a-si sterge contul.
+			In cazul in care utilizatorul nu este logat, i se restrictioneaza accesul acestei facilitati.
+			
+	Afisare
+			Utilizatorul poate afisa in orice moment conturile inregistrate pana la momentul accesarii acestei facilitati.

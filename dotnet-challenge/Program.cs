@@ -7,7 +7,7 @@ namespace Iacob_Calin
 {
     class Program
     {
-        public enum optiuni { iesire, reg, log, sch, delog, dele, afis }; //Nu stiu de ce nu merge sa declar enum-ul in Main :(
+        public enum optiuni { iesire, reg, log, delog, dele, afis }; //Nu stiu de ce nu merge sa declar enum-ul in Main :(
         static void Main(string[] args)
         {
             bool isLoggedIn=false;
@@ -25,9 +25,9 @@ namespace Iacob_Calin
                 Console.WriteLine("0.Iesire");
                 Console.WriteLine("1.Inregistreaza un email");
                 Console.WriteLine("2.Logare");
-                Console.WriteLine("4.Delogare");
-                Console.WriteLine("5.Stergere Cont");
-                Console.WriteLine("6.Afiseaza useri");
+                Console.WriteLine("3.Delogare");
+                Console.WriteLine("4.Stergere Cont");
+                Console.WriteLine("5.Afiseaza useri");
                 Console.Write("OPTIUNEA DUMNEAVOASTRA:");
                 int opt = Convert.ToInt32(Console.ReadLine());
                 switch(opt)
